@@ -1,0 +1,64 @@
+# .gitignore for KiCad projects
+# Based on the official template from https://github.com/github/gitignore/blob/main/KiCad.gitignore
+# Updated for KiCad 6/7/8/9+
+
+# Temporary files
+*.000
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.sch-bak
+*-backups
+*-cache*
+*-bak
+*-bak*
+*~
+~*
+_autosave-*
+\#auto_saved_files\#
+*.tmp
+*-save.pro
+*-save.kicad_pcb
+fp-info-cache
+~*.lck
+*.lck
+
+# Netlist files (exported from Eeschema)
+*.net
+
+# Autorouter files (exported from Pcbnew)
+*.dsn
+*.ses
+
+# Exported BOM files (optional — uncomment if you prefer to regenerate them)
+*.xml
+*.csv
+
+# Archived Backups (KiCad 6.0+)
+**/*-backups/*.zip
+
+# Local git-based history (KiCad 9.0+)
+.history
+
+# Local project settings (layer visibility, filters, etc.)
+*.kicad_prl
+
+# Older KiCad cache / rescue libraries (KiCad 5 and earlier)
+*-cache.lib
+*-rescue.lib
+*-bak.lib
+
+# Common OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Optional: uncomment if you do not want to track fabrication outputs
+# gerbers/
+# *.gbr
+# *.gbrjob
+# *.drl
+# *.pos
